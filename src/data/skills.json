@@ -1,0 +1,42 @@
+[
+    {
+      "title": "HTML",
+      "imageSrc": "skills/html.png"
+    },
+    {
+      "title": "CSS",
+      "imageSrc": "skills/css.png"
+    },
+    {
+      "title": "React",
+      "imageSrc": "skills/react.png"
+    },
+    {
+      "title": "Javascript",
+      "imageSrc": "skills/js.png"
+    },
+    {
+      "title": "C#",
+      "imageSrc": "skills/csharp.png"
+    },
+    {
+      "title": "Python",
+      "imageSrc": "skills/python.png"
+    },
+    {
+      "title": "Java",
+      "imageSrc": "skills/java.png"
+    },
+    {
+        "title": "Oracle SQL",
+        "imageSrc": "skills/oraclesql.png"
+    },
+    {
+        "title": "Git",
+        "imageSrc": "skills/git.png"
+    },
+    {
+        "title": "Linux",
+        "imageSrc": "skills/linux.png"
+    }
+  ]
