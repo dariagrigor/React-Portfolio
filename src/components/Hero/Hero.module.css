@@ -1,0 +1,132 @@
+/* Hero.module.css */
+
+:root {
+    --primary-color: #007acc;
+    --text-color: #333;
+    --background-color: #f7f9fc;
+    --btn-color: #007acc;
+    --btn-hover-color: #005f99;
+    --blur-color: rgba(0, 122, 204, 0.2);
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: var(--background-color);
+    position: relative;
+    overflow: hidden;
+    min-height: 80vh;
+  }
+  
+  .content {
+    max-width: 600px;
+    z-index: 2;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .contactBtn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--btn-color);
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contactBtn:hover {
+    background-color: var(--btn-hover-color);
+  }
+  
+  .heroImg {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+  }
+  
+  .topBlur,
+  .bottomBlur {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .topBlur {
+    width: 300px;
+    height: 300px;
+    background-color: var(--blur-color);
+    top: -100px;
+    right: 50px;
+    filter: blur(100px);
+  }
+  
+  .bottomBlur {
+    width: 400px;
+    height: 400px;
+    background-color: var(--blur-color);
+    bottom: -100px;
+    left: 50px;
+    filter: blur(120px);
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+  
+    .content {
+      text-align: center;
+      max-width: 100%;
+    }
+  
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .description {
+      font-size: 1.1rem;
+    }
+  
+    .heroImg {
+      margin-top: 20px;
+      max-width: 300px;
+    }
+  
+    .topBlur,
+    .bottomBlur {
+      width: 200px;
+      height: 200px;
+      filter: blur(80px);
+    }
+  
+    .topBlur {
+      top: -50px;
+      right: -50px;
+    }
+  
+    .bottomBlur {
+      bottom: -50px;
+      left: -50px;
+    }
+  }
+  

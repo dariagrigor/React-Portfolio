@@ -1,0 +1,92 @@
+:root {
+  --color-text: #333; /* Adjust the color as per your design */
+  --background-color: #f0f0f0;
+  --menu-bg-color: rgba(0, 0, 0, 0.8);
+  --hover-color: #007acc;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.menuBtn {
+  display: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menuItems {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.menuItems a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+.menuItems a:hover {
+  color: var(--hover-color);
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+  .menuBtn {
+    display: block; /* Show menu button for mobile */
+  }
+
+  .menuItems {
+    display: none; /* Hide menu items initially for mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--menu-bg-color);
+    width: 100%;
+    padding: 20px;
+    gap: 15px;
+    border-radius: 8px;
+  }
+
+  .menuOpen {
+    display: flex; /* Show menu when toggled open */
+    z-index: 9;
+  }
+
+  .menuItems li {
+    text-align: center;
+  }
+
+  .menuItems a {
+    color: #fff;
+  }
+
+  .menuItems a:hover {
+    color: var(--hover-color);
+  }
+}
