@@ -1,3 +1,8 @@
+/* File name: Navbar.jsx
+Student Name: Daria Grigorovich
+StudentID: 301384967
+Date: September 26, 2024 */
+
 import React, { useState } from "react";
 
 import styles from "./Navbar.module.css";
@@ -9,7 +14,7 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <a className={styles.title} href="/">
-        Portfolio
+        Daria's Portfolio
       </a>
       <div className={styles.menu}>
         <img
