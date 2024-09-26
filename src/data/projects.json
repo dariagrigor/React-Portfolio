@@ -1,0 +1,23 @@
+[
+    {
+      "title": "Bug Smasher Game",
+      "imageSrc": "projects/project1.png",
+      "description": "A game where a bug hops randomly, and the player clicks to catch it and earn points. Players can reset the bug's speed or score with dedicated buttons.",
+      "skills": ["HTML", "CSS", "Javascript"],
+      "source": "https://github.com/dariagrigor/Bug-Smasher-Game"
+    },
+    {
+      "title": "Fraction Calculator",
+      "imageSrc": "projects/project2.png",
+      "description": "This is a GUI app which allows the user to multiply, divide, add and subtract two fractions.",
+      "skills": ["C#"],
+      "source": "https://github.com/dariagrigor/Fraction-Calculator"
+    },
+    {
+      "title": "Student Information App",
+      "imageSrc": "projects/project3.png",
+      "description": "This is a Java application using JavaFx which allows the user to enter student information.",
+      "skills": ["Java", "JavaFX"],
+      "source": "https://github.com/dariagrigor/Student-Info-App"
+    }
+  ]

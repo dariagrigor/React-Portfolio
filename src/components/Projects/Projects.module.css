@@ -1,0 +1,46 @@
+/* File name: Projects.module.css
+Student Name: Daria Grigorovich
+StudentID: 301384967
+Date: September 26, 2024 */
+
+.container {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .title {
+      font-size: 28px;
+    }
+  
+    .projects {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .title {
+      font-size: 24px;
+    }
+  
+    .projects {
+      grid-template-columns: 1fr;
+    }
+  }  
