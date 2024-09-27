@@ -9,6 +9,7 @@ import { Hero } from "./components/Hero/Hero";
 import { About } from "./components/About/About";
 import { Services } from "./components/Services/Services";
 import { Projects } from "./components/Projects/projects";
+import { Contact } from "./components/Contact/Contact"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
     <About />
     <Services />
     <Projects />
+    <Contact />
   </div>
   );
 }
